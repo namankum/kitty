@@ -23,11 +23,10 @@
             width: 100%;
             height: 100%;
             background: url('https://ebony-tendency-2ba.notion.site/image/https%3A%2F%2Fprod-files-secure.s3.us-west-2.amazonaws.com%2F3592f0ec-b7b5-4c07-9cb5-921db1b5e2e9%2F285501c1-977b-4737-baf2-f4d6de5ea839%2Fkiti.png?table=block&id=3728cc27-916b-4c6b-833b-b37f784ced4b&spaceId=3592f0ec-b7b5-4c07-9cb5-921db1b5e2e9&width=2000&userId=&cache=v2') no-repeat center center;
-            background-size: cover; /* 이미지가 화면에 꽉 차도록 설정 */
+            background-size: contain; /* 이미지가 화면에 맞추어 조정됨 */
+            background-attachment: fixed; /* 배경 이미지가 스크롤되지 않도록 설정 */
             z-index: 1;
         }
-
-
 
         #letter {
             font-family: 'Arial', sans-serif;
@@ -66,7 +65,6 @@
 </head>
 <body>
     <div id="background-image"></div>
-    <div id="overlay"></div>
     <div id="letter">
         <marquee hspace="100" vspace="100" direction="up" scrollamount="2">
             사랑아<br>키티해<br><span class="heart">❤️</span> <!-- 하트를 "키티해" 아래로 이동 후 오른쪽으로 한 칸 더 밀어넣기 -->
